@@ -1,6 +1,20 @@
-# RxjsSignupForm
+# PxJS Signup Form Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+This project implements a signup form using Angular CLI version 18.2.5 and Pico CSS for styling. The form includes input fields for email, password, and confirm password, along with validation logic to ensure user input meets specified requirements.
+
+## Features
+
+- **Email Input**: Required field validated to ensure it contains a valid email format.
+- **Password Input**: Required field with a minimum length of 6 characters.
+- **Confirm Password Input**: Must match the password field.
+- **Signup Button**: Enabled only when the form is valid and touched.
+- **Reset Button**: Clears the form when data is present and is disabled when the form is empty.
+
+### Installation
+
+1. Clone the repository:
+2. 
+   git clone https://github.com/your-username/repository-name.git
 
 ## Development server
 
@@ -22,6 +36,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
