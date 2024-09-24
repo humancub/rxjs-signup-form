@@ -1,0 +1,66 @@
+<form [formGroup]="signupForm" class="container">
+  <fieldset>
+    <legend>Signup Form</legend>
+
+    <label for="email">Email:</label>
+    <input
+      id="email"
+      type="email"
+      formControlName="email"
+      autocomplete="email"
+    />
+    <div *ngIf="email?.invalid && email?.touched" class="error">
+      <small *ngIf="email?.errors?.['required']">Email is required</small>
+      <small *ngIf="email?.errors?.['pattern']">Invalid email format</small>
+    </div>
+
+    <label for="password">Password:</label>
+    <input
+      id="password"
+      type="password"
+      formControlName="password"
+      autocomplete="new-password"
+    />
+    <div *ngIf="password?.invalid && password?.touched" class="error">
+      <small *ngIf="password?.errors?.['required']">Password is required</small>
+      <small *ngIf="password?.errors?.['minlength']"
+        >Minimum 6 characters</small
+      >
+    </div>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input
+      id="confirmPassword"
+      type="password"
+      formControlName="confirmPassword"
+      autocomplete="new-password"
+    />
+    <div
+      *ngIf="confirmPassword?.touched && signupForm.errors?.['mismatch']"
+      class="error"
+    >
+      <small>Passwords do not match</small>
+    </div>
+
+    <div *ngIf="showError$ | async" class="error">
+      {{ showError$ | async }}
+    </div>
+
+    <button
+      type="button"
+      (click)="onSignup()"
+      [disabled]="!(isFormValid$ | async)"
+      class="primary"
+    >
+      Signup
+    </button>
+    <button
+      type="button"
+      (click)="onReset()"
+      [disabled]="signupForm.pristine"
+      class="secondary"
+    >
+      Reset
+    </button>
+  </fieldset>
+</form>
