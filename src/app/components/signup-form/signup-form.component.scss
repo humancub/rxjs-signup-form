@@ -1,0 +1,21 @@
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.primary,
+.secondary {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
