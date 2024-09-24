@@ -1,4 +1,4 @@
-# PxJS Signup Form Project
+# RxJS Signup Form Project
 
 This project implements a signup form using Angular CLI version 18.2.5 and Pico CSS for styling. The form includes input fields for email, password, and confirm password, along with validation logic to ensure user input meets specified requirements.
 
