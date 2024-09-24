@@ -14,7 +14,7 @@ This project implements a signup form using Angular CLI version 18.2.5 and Pico 
 
 1. Clone the repository:
 2. 
-   git clone https://github.com/your-username/repository-name.git
+   git clone https: https://github.com/humancub/rxjs-signup-form.git
 
 ## Development server
 
